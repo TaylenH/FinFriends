@@ -1,0 +1,5 @@
+.headerLogo {
+    border-radius: 100%;
+    filter: drop-shadow(5px 5x 5px black);
+    margin-left: 50px;
+}
