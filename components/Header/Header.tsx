@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Image from 'next/image';
 import styles from './Header.module.css';
+import { signIn } from 'next-auth/react';
 
 
 const Header = () => {
@@ -19,7 +20,7 @@ const Header = () => {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         FinFriends
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Button color="inherit" onClick={() => signIn()}>Login</Button>
                 </Toolbar>
             </AppBar>
         </Box>
